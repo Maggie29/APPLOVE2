@@ -24,8 +24,12 @@ figure.appendChild(figcaption);
 anchor.appendChild(figure);
 divGrid.appendChild(anchor);
 listPicture.appendChild(divGrid);
-console.log(divGrid);
+//console.log(divGrid);
 
 }
 }
 window.addEventListener("load",print);
+
+//modal
+var modal = document.getElementById("grid-modal");
+modal.style.display = "none";
