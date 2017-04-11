@@ -7,6 +7,7 @@ var products = ["Tayman", "Kerala", "The Brass Coq", "Sungenre", "Mitragyna Spec
    for(var i = 0; i<products.length; i++){
 var divGrid = document.createElement("div");
 divGrid.setAttribute("class","grid");
+var anchor = document.createElement("a");
 var figure = document.createElement("figure");
 var img = document.createElement("img");
 img.setAttribute("class", "image-box")
@@ -20,8 +21,11 @@ titulo.innerHTML = products[i];
 figcaption.appendChild(titulo);
 figure.appendChild(img);
 figure.appendChild(figcaption);
-divGrid.appendChild(figure);
+anchor.appendChild(figure);
+divGrid.appendChild(anchor);
 listPicture.appendChild(divGrid);
+console.log(divGrid);
+
 }
 }
 window.addEventListener("load",print);
