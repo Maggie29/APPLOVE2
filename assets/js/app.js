@@ -28,8 +28,23 @@ listPicture.appendChild(divGrid);
 
 }
 }
-window.addEventListener("load",print);
 
 //modal
-var modal = document.getElementById("grid-modal");
-modal.style.display = "none";
+
+window.addEventListener("load",function(){;
+var grid-modal = document.getElementById("grid-modal");
+var image-box = document.getElementsByClassName("image-box");
+var foto = document.getElementById("foto");
+
+for(var i = 0; i<image-box.length; i++){
+  image-box[i].addEventListener("click", function(event){
+    grid-modal.style.display = "block";
+    foto.src = event.target.src;
+    foto.style.borderRadius = "2px";
+  });
+}
+}
+document.getElementById("modal").addEventListener("click", function(){
+  grid-modal.style.display = "none";
+});
+});
